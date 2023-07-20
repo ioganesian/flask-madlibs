@@ -13,7 +13,7 @@ def generate_form():
     """generates homepage form"""
     prompts = silly_story.prompts
 
-    return render_template("questions.html", prompt=prompts)
+    return render_template("questions.html", prompts=prompts)
 
 @app.get("/results")
 def generate_results():
